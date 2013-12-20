@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<title>希望条件</title>
+<link rel="stylesheet" type="text/css" href="css/common.css" media="all" />
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/form.js"></script>
+<script src="js/validate.js"></script>
+</head>
+<body>
+<form>
+<ul class="form-01">
+<li><label>氏名<span class="required">*必須</span><input type="text" name="name" title="例）鈴木一郎" class="form-input-01" /></label></li>
+<li><label>メールアドレス&nbsp;<span class="required">*必須</span><input type="text" name="mail" title="例）example@example.jp" class="form-input-02" /></label></li>
+<li><label>住所&nbsp;<span class="required">*必須</span><input type="text"  name="address" title="例）" class="form-input-02" /></label></li>
+<li>種類&nbsp;<span class="required">*必須</span>
+<select class="form-select-01" name="products">
+<option value="" selected="selected">選択してください</option>
+<option value="1">TシャツA</option>
+<option value="2">TシャツB</option>
+</select>
+</li>
+<li>サイズ&nbsp;<span class="required">*必須</span>
+<select class="form-select-02" name="size">
+<option value="" selected="selected">選択してください</option>
+<option value="1">S</option>
+<option value="2">M</option>
+<option value="3">L</option>
+<option value="4">LL</option>
+</select>
+</li>
+</ul>
+<label><input type="checkbox" name="privacy" class="mb10">&nbsp;個人情報の取り扱いについて同意する</label>
+<p><input type="submit" value="送信する"></p>
+</form>
+</body>
+</html>

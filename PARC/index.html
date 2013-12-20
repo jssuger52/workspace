@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>PARC MANTHER &#8546; OFFICIAL SITE</title>
+<meta name="robots" content="ALL">
+<meta name="description" content="三代目パーク・マンサーオフィシャルサイトです。TBS『学校へ行こう！』【軟式globe パーク・マンサー】としてブレイクしたパーク・マンサーが、幾度かの改名を経て、三代目パークマンサーとして復活！今後の動向に注目です！">
+<meta name="keywords" content="三代目パークマンサー,PARCMANTHER,パークマンサー,ぱーくまんさー,パークサンガー,ぱーくさんがー,PARC,パーク,ぱーく,サンガ,サンガー,さんが,三箇,ダンシング刑事,映画,俳優,軟式globe,なんしきぐろーぶ">
+<link rel="stylesheet" type="text/css" href="css/common.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/colorbox.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/slider.css" media="all">
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/jquery.colorbox-min.js"></script>
+<script src="js/jquery.nivo.slider.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/html5.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#slider').nivoSlider();
+});
+$(function(){
+    if($('body').hasClass('access')){
+        $.colorbox({ open:true, href:"gallery.html", iframe:true, width:500, height:500 });
+    }
+    else{
+    }
+    $(window).load(function(){
+        $.cookie("access",$('body').addClass('access'));
+    })
+});
+</script>
+</head>
+<body>
+<div id="wrapper">
+<noscript>このサイトでは、JavaScriptの機能を有効に設定していただくことで最適なコンテンツをご覧いただけます。</noscript>
+<header id="header">
+<script src="./js/header.js"></script>
+<!--/#header--></header>
+<div id="first">初回アクセスです。</div>
+
+<div id="container">
+<nav id="gNav">
+<ul>
+<li><a href="./" class="stay">TOP</a></li>
+<li><a href="./profile.html">PROFILE</a></li>
+<li><a href="./gallery.html">GALLERY</a></li>
+<li><a href="./goods.html">GOODS</a></li>
+<li><a href="mailto:info@parc-manther.com">CONTACT</a></li>
+</ul>
+<!--/#gNav--></nav>
+
+<section class="slide-gallery">
+<div id="slider" class="nivoSlider">
+<img src="./img/main-01.jpg" alt="" width="950" height="532" />
+<img src="./img/main-02.jpg" alt="" width="950" height="532" />
+<img src="./img/main-03.jpg" alt="" width="950" height="532" />
+<!--/#slider.nivoSlider--></div>
+<!--/.main-gallery--></section>
+
+<aside id="topics">
+<h1 class="hdg-level-01">What's New</h1>
+<div class="inner">
+<dl>
+<dt>2013.10.12</dt><dd>三代目パークマンサーオフィシャルサイトOPEN</dd>
+</dl>
+<!--/.inner--></div>
+<!--/#topics--></aside>
+
+<aside id="twitter">
+<a class="twitter-timeline" href="https://twitter.com/ParcManther_3" data-widget-id="387705535937536000" height="200">@ParcManther_3 からのツイート</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<!--/#twitter--></aside>
+
+<aside id="newMovie">
+<h1 class="hdg-level-01 mb10">New Movie</h1>
+<p><iframe width="280" height="166" src="//www.youtube.com/embed/_XkRImnDtx8?feature=player_detailpage" frameborder="0" allowfullscreen style="z-index:0;"></iframe></p>
+<!--/#movie--></aside>
+<!--/#container--></div>
+
+<footer id="footer">
+<p>&copy;All Rights Reserved by PARC MANTHER &#8546;</p>
+</footer>
+<p class='youtube'>All Rights Reserved by PARC MANTHER &#8546;</p>
+<!--#wrapper--></div>
+</body>
+</html>
