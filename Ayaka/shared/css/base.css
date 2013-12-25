@@ -97,9 +97,10 @@ text-indent:-99999px;
  gNav
 --------------------------------------- */
 #gNav{
-background:#FFF;
-opacity:0.75;
-filter:alpha(opacity=75);
+background-color:rgba(255, 255, 255, 0.5);
+filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7fffffff,endcolorstr=#7fffffff,gradienttype=0);
+-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#7fffffff,endColorstr=#7fffffff)";
+zoom:1;
 position:absolute;
 padding:8px 0;
 left:0;

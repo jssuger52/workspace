@@ -11,9 +11,10 @@ background:url('../img/bg-01.jpg') no-repeat;
  title
 --------------------------------------- */
 .hdg-level1-01{
-background:url('../img/hdg-level01-01.gif') no-repeat left top;
-width:230px;
-height:53px;
+background:url(../img/hdg-level1-01.png) no-repeat left top;
+width:154px;
+height:23px;
+margin-bottom:10px;
 text-indent:-99999px;
 }
 .hdg-level1-02{
