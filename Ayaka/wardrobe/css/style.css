@@ -8,25 +8,25 @@ background:url('../img/bg-01.jpg') no-repeat;
 }
 
 /* ---------------------------------------
- nav
---------------------------------------- */
-.gNav.top{
-position: absolute;
-left:401px;
-top:377px;
-}
-
-/* ---------------------------------------
  title
 --------------------------------------- */
 .hdg-level1-01{
-background:url('../img/hdg-level01-01.gif') no-repeat left top;
-width: 230px;
-height: 53px;
-position: absolute;
-left:529px;
-top:271px;
+background:url(../img/hdg-level1-01.png) no-repeat left top;
+width:154px;
+height:23px;
+margin-bottom:10px;
 text-indent:-99999px;
+}
+
+/* ---------------------------------------
+ section
+--------------------------------------- */
+.type-01{
+width:600px;
+height:480px;
+position:absolute;
+left:40px;
+top:30px
 }
 
 /* モニター幅960px以下 */
