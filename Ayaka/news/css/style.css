@@ -3,14 +3,14 @@
 /* ---------------------------------------
  background
 --------------------------------------- */
-#container{
+.container{
 background:url('../img/bg-01.jpg') no-repeat;
 }
 
 /* ---------------------------------------
  title
 --------------------------------------- */
-.hdg-01{
+.hdg-level1-01{
 background:url('../img/hdg-level1-01.png') no-repeat left top;
 width:154px;
 height:23px;

@@ -3,7 +3,7 @@
 /* ---------------------------------------
  background
 --------------------------------------- */
-#container{
+.container{
 background:url('../img/bg-01.jpg') no-repeat;
 }
 
@@ -43,19 +43,19 @@ text-indent:-99999px;
 /* ---------------------------------------
  section
 --------------------------------------- */
-section.type-01{
+.type-01{
 width:380px;
 height:480px;
 position:absolute;
 left:40px;
 top:30px
 }
-section.type-02{
+.type-02{
 line-height:1.3;
 height:300px;
 overflow:auto;
 }
-section.type-03{
+.type-03{
 margin-bottom:10px;
 }
 

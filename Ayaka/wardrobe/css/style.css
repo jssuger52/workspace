@@ -3,14 +3,14 @@
 /* ---------------------------------------
  background
 --------------------------------------- */
-#container{
+.container{
 background:url('../img/bg-01.jpg') no-repeat;
 }
 
 /* ---------------------------------------
  nav
 --------------------------------------- */
-#gNav.top{
+.gNav.top{
 position: absolute;
 left:401px;
 top:377px;

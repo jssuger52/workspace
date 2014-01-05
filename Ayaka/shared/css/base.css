@@ -65,27 +65,25 @@ background:#fcfaed;
 width:100%;
 height:100%;
 }
-#wrapper{
+.wrapper{
 width:960px;
 position:relative;
 top:50%;
 left:50%;
 margin:-329px 0 0 -480px;
 }
-#contentWrap{
+.container{
 position:relative;
-}
-#container{
 height:600px;
 }
 
 /* ---------------------------------------
  header
 --------------------------------------- */
-#header{
+.header{
 margin-bottom:5px;
 }
-#header .headerLogo a{
+.header .headerLogo a{
 background:url(../img/header-logo.png) no-repeat left top;
 display:block;
 width:237px;
@@ -96,7 +94,7 @@ text-indent:-99999px;
 /* ---------------------------------------
  gNav
 --------------------------------------- */
-#gNav{
+.gNav{
 background-color:rgba(255, 255, 255, 0.5);
 filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7fffffff,endcolorstr=#7fffffff,gradienttype=0);
 -ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#7fffffff,endColorstr=#7fffffff)";
@@ -107,43 +105,43 @@ left:0;
 bottom:50px;
 width:100%;
 }
-#gNav ul{
+.gNav ul{
 margin-left:212px;
 }
-#gNav li{
+.gNav li{
 float:left;
 margin-right:19px;
 }
-#gNav li a{
+.gNav li a{
 display:block;
 height:13px;
 text-indent:-99999px;
 }
-#gNav li a:hover,
-#gNav li a.stay{
+.gNav li a:hover,
+.gNav li a.stay{
 background-position:0 -13px !important; 
 }
-#gNav li.nav-01 a{
+.gNav li.nav-01 a{
 background:url(../img/gNav-01.gif) no-repeat left top;
 width:30px;
 }
-#gNav li.nav-02 a{
+.gNav li.nav-02 a{
 background:url(../img/gNav-02.gif) no-repeat left top;
 width:107px;
 }
-#gNav li.nav-03 a{
+.gNav li.nav-03 a{
 background:url(../img/gNav-03.gif) no-repeat left top;
 width:74px;
 }
-#gNav li.nav-04 a{
+.gNav li.nav-04 a{
 background:url(../img/gNav-04.gif) no-repeat left top;
 width:74px;
 }
-#gNav li.nav-05 a{
+.gNav li.nav-05 a{
 background:url(../img/gNav-05.gif) no-repeat left top;
 width:85px;
 }
-#gNav li.nav-06 a{
+.gNav li.nav-06 a{
 background:url(../img/gNav-06.gif) no-repeat left top;
 width:73px;
 }
@@ -151,14 +149,14 @@ width:73px;
 /* ---------------------------------------
  footer
 --------------------------------------- */
-#footer{
+.footer{
 text-align:right;
 }
-#footer p{
+.footer p{
 background:url(../img/copylight.gif) no-repeat right 8px;
 height:17px;
 }
-#footer p span{
+.footer p span{
 position:absolute;
 left:-99999px;
 }
@@ -180,7 +178,7 @@ clear:both;
 /* ---------------------------------------
  clearfix
 --------------------------------------- */
-#gNav ul:after,
+.gNav ul:after,
 .lyt-column-02:after{
 content:".";
 display:block;
@@ -189,17 +187,17 @@ clear:both;
 visibility:hidden; 
 line-height:0; 
 }
-#gNav ul,
+.gNav ul,
 .lyt-column-02{
 display:block;
 min-height:1%;
 }
-*:first-child+html #gNav ul,
+*:first-child+html .gNav ul,
 *:first-child+html .lyt-column-02{
 display:inline-table;
 zoom:1;
 }
-* html #gNav ul,
+* html .gNav ul,
 * html .lyt-column-02{
 zoom:1;
 }
