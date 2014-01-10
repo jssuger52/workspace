@@ -1,0 +1,25 @@
+.box {
+position: absolute;
+left: 5px;
+top: 20px;
+}
+
+.box {
+opacity: 0.5;
+filter: alpha(opacity=50);
+}
+.box li.foo {
+line-height: 1.4;
+}
+
+body {
+font-size: 12px;
+font-size: 1rem;
+}
+
+#wrapper {
+width: 950px;
+}
+#wrapper h1 {
+display: block;
+}
