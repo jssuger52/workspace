@@ -119,7 +119,7 @@ text-indent:-99999px;
 }
 .gNav li a:hover,
 .gNav li a.stay{
-background-position:0 -13px !important; 
+background-position:0 -13px !important;
 }
 .gNav li.nav-01 a{
 background:url(../img/gNav-01.gif) no-repeat left top;
@@ -174,33 +174,34 @@ text-align:center;
 .clear{
 clear:both;
 }
+.link-prev{
+float:left;
+}
+.link-next{
+float:right;
+}
+.link-prev a{display:block;width:50px;height:13px;background:url(../img/link-prev.png) no-repeat left top;}
+.link-next a{display:block;width:50px;height:13px;background:url(../img/link-next.png) no-repeat left top;}
+.link-prev a:hover,
+.link-next a:hover{background-position:0 -13px;}
+.link-prev a span,
+.link-next a span{visibility:hidden;}
+
 
 /* ---------------------------------------
  clearfix
 --------------------------------------- */
 .gNav ul:after,
-.lyt-column-02:after{
-content:".";
-display:block;
-height:0;
-clear:both;
-visibility:hidden; 
-line-height:0; 
-}
+.lyt-column-02:after{content:".";display:block;height:0;clear:both;visibility:hidden;line-height:0;}
+
 .gNav ul,
-.lyt-column-02{
-display:block;
-min-height:1%;
-}
+.lyt-column-02{display:block;min-height:1%;}
+
 *:first-child+html .gNav ul,
-*:first-child+html .lyt-column-02{
-display:inline-table;
-zoom:1;
-}
+*:first-child+html .lyt-column-02{display:inline-table;zoom:1;}
+
 * html .gNav ul,
-* html .lyt-column-02{
-zoom:1;
-}
+* html .lyt-column-02{zoom:1;}
 
 /* ---------------------------------------
  margin/padding/align/float

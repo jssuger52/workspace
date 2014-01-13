@@ -3,112 +3,44 @@
 /* ---------------------------------------
  background
 --------------------------------------- */
-.container{
-background:url('../img/bg-01.jpg') no-repeat;
-}
+.container{background:url('../img/bg-01.jpg') no-repeat;}
 
 /* ---------------------------------------
  title
 --------------------------------------- */
-.hdg-level1-01{
-background:url(../img/hdg-level1-01.png) no-repeat left top;
-width:154px;
-height:23px;
-margin-bottom:10px;
-text-indent:-99999px;
-}
+.hdg-level1-01{width:154px;height:23px;margin-bottom:15px;background:url(../img/hdg-level1-01.png) no-repeat left top;text-indent:-99999px;}
 
 /* ---------------------------------------
  section
 --------------------------------------- */
-.type-01{
-width:885px;
-position:absolute;
-left:40px;
-top:30px
-}
-.gallery-list li{float:left;margin-right:10px;}
+.type-01{width:885px;position:absolute;left:40px;top:30px}
+.gallery-list li{float:left;margin:18px 18px 0 0;border:2px solid #afafaf;}
+.lyt-column-02{padding:10px 25px 0 5px;}
 
 /*__________________________ tab __________________________*/
-.tab-container-03{
-margin-bottom:20px;
-width:100%;
-}
-
-.tab-container-03 .tab-btns{
-margin-bottom:-1px;
-position:relative;
-width:579px;
-}
-
-.tab-container-03 .tab-btns li{
-margin-right:5px;
-display:inline;
-float:left;
-width:141px;
-background:#ccc;
-text-align:center;
-}
-
-.tab-container-03 .tab-btns .active{
-background:;
-}
-
-.tab-container-03 .tab-btns .last{
-margin-right:0;
-}
-
-.tab-container-03 .tab-btns a{
-padding-top:10px;
-display:block;
-width:141px;
-height:29px;
-}
+.tab-container-03{width:100%;}
+.tab-container-03 .tab-btns{position:relative;margin-bottom:-1px;}
+.tab-container-03 .tab-btns li{margin-right:0;display:inline;float:left;width:141px;text-align:center;}
+.tab-container-03 .tab-btns .last{margin-right:0;}
+.tab-container-03 .tab-btns a{display:block;padding-top:12px;width:141px;height:29px;border-top-left-radius:10px;border-top-right-radius:10px;background:#242D3E;color:#FFF;text-decoration:none;font-size:12px;}
+.tab-container-03 .tab-btns a:hover,
+.tab-container-03 .tab-btns .active{opacity:0.8;}
+.tab-container-03 .tab-btns .active a:hover{opacity:1;}
+.tab-container-03 .tab-btns .last a{background:#792F3A;}
 .tab-container-03 .tab-contents{
-padding:0 20px 20px 20px;
-height:370px;
-border:solid 1px #bfbfbf;
-background:#FFF;
-}
-
-.tab-container-03.active .tab-contents{
-position:absolute;
-left:-9999px;
-top:0;
-}
-
-.tab-container-03 .tab-contents.active{
-position:static;
-}
+padding:0 0 0 23px;height:390px;border:solid 1px #bfbfbf;background-color:rgba(255, 255, 255, 0.5);filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7fffffff,endcolorstr=#7fffffff,gradienttype=0);-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#7fffffff,endColorstr=#7fffffff)";zoom:1;}
+.tab-container-03.active .tab-contents{position:absolute;left:-9999px;top:0;}
+.tab-container-03 .tab-contents.active{position:static;}
 
 /*__________________________ clearfix __________________________*/
 .tab-container-03 .tab-btns:after,
-.gallery-list:after{
-content:".";
-display:block;
-height:0;
-clear:both;
-visibility:hidden; 
-line-height:0; 
-}
-
+.gallery-list:after{content:".";display:block;height:0;clear:both;visibility:hidden;line-height:0;}
 .tab-container-03 .tab-btns,
-.gallery-list{
-display:block;
-min-height:1%;
-}
-
+.gallery-list{display:block;min-height:1%;}
 *:first-child+html .tab-container-03 .tab-btns,
-*:first-child+html .gallery-list{
-display:inline-table;
-zoom:1;
-}
-
+*:first-child+html .gallery-list{display:inline-table;zoom:1;}
 * html .tab-container-03 .tab-btns,
-* html .gallery-list{
-zoom:1;
-}
-
+* html .gallery-list{zoom:1;}
 
 /* モニター幅960px以下 */
 @media only screen and (max-width:960px){
