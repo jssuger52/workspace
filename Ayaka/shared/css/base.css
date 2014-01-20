@@ -50,11 +50,11 @@ color:#222;
 }
 a{
 color:#2f2922;
-text-decoration:underline
+text-decoration:underline;outline:none;
 }
 a:hover{
 color:#9B1313;
-text-decoration:none;
+text-decoration:none;outline:none;
 }
 
 /* ---------------------------------------
@@ -83,13 +83,8 @@ height:600px;
 .header{
 margin-bottom:5px;
 }
-.header .headerLogo a{
-background:url(../img/header-logo.png) no-repeat left top;
-display:block;
-width:237px;
-height:36px;
-text-indent:-99999px;
-}
+.header .headerLogo a{background:url(../img/header-logo.png) no-repeat left top;display:block;width:237px;height:36px;}
+.header .headerLogo span{visibility:hidden;}
 
 /* ---------------------------------------
  gNav
@@ -162,6 +157,29 @@ left:-99999px;
 }
 
 /* ---------------------------------------
+link
+--------------------------------------- */
+.link-list-01{width:150px;margin:0 auto;padding:15px 25px 0 5px;}
+.link-prev{
+float:left;
+}
+.link-next{
+float:right;
+}
+.link-prev,
+.link-prev a{display:block;width:50px;height:13px;background:url(../img/link-prev.png) no-repeat left top;}
+.link-next,
+.link-next a{display:block;width:50px;height:13px;background:url(../img/link-next.png) no-repeat left top;}
+.link-prev a:hover,
+.link-next a:hover{background-position:0 -13px;}
+.link-prev span,
+.link-next span{visibility:hidden;}
+.link-prev a,
+.link-next a{opacity:1;filter: alpha(opacity=100);}
+.link-prev,
+.link-next{opacity:0.5;filter: alpha(opacity=50);}
+
+/* ---------------------------------------
 other
 --------------------------------------- */
 noscript{
@@ -174,34 +192,29 @@ text-align:center;
 .clear{
 clear:both;
 }
-.link-prev{
-float:left;
-}
-.link-next{
-float:right;
-}
-.link-prev a{display:block;width:50px;height:13px;background:url(../img/link-prev.png) no-repeat left top;}
-.link-next a{display:block;width:50px;height:13px;background:url(../img/link-next.png) no-repeat left top;}
-.link-prev a:hover,
-.link-next a:hover{background-position:0 -13px;}
-.link-prev a span,
-.link-next a span{visibility:hidden;}
-
 
 /* ---------------------------------------
  clearfix
 --------------------------------------- */
 .gNav ul:after,
-.lyt-column-02:after{content:".";display:block;height:0;clear:both;visibility:hidden;line-height:0;}
+.lyt-column-02:after,
+.link-list-01:after,
+.gallery-list:after{content:".";display:block;height:0;clear:both;visibility:hidden;line-height:0;}
 
 .gNav ul,
-.lyt-column-02{display:block;min-height:1%;}
+.lyt-column-02,
+.link-list-01,
+.gallery-list{display:block;min-height:1%;}
 
 *:first-child+html .gNav ul,
-*:first-child+html .lyt-column-02{display:inline-table;zoom:1;}
+*:first-child+html .lyt-column-02,
+*:first-child+html .link-list-01,
+*:first-child+html .gallery-list{display:inline-table;zoom:1;}
 
 * html .gNav ul,
-* html .lyt-column-02{zoom:1;}
+* html .lyt-column-02,
+* html .link-list-01,
+* html .gallery-list{zoom:1;}
 
 /* ---------------------------------------
  margin/padding/align/float
