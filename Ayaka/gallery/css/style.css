@@ -23,7 +23,7 @@
 .tab-container-03 .tab-btns .last{margin-right:0;}
 .tab-container-03 .tab-btns a{display:block;padding-top:10px;width:141px;height:29px;border-top-left-radius:10px;border-top-right-radius:10px;background:#242D3E;color:#FFF;text-decoration:none;font-size:14px;}
 .tab-container-03 .tab-btns a:hover{opacity:0.8;filter: alpha(opacity=80);}
-.tab-container-03 .tab-btns .active a{padding-top:7px;width:134px;border:4px solid #091f48;border-bottom:none;}
+.tab-container-03 .tab-btns .active a{padding-top:6px;width:133px;border:4px solid #091f48;border-bottom:none;}
 .tab-container-03 .tab-btns .active.last a{border:4px solid #720414;border-bottom:none;}
 .tab-container-03 .tab-btns .active a:hover{opacity:1;}
 .tab-container-03 .tab-btns .last a{background:#792F3A;}
