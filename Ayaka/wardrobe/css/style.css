@@ -10,7 +10,8 @@ background:url('../img/bg-01.jpg') no-repeat;
 /* ---------------------------------------
  title
 --------------------------------------- */
-.hdg-level1-01{font-size: 12px;font-weight: bold;}
+.hdg-level1-01{width:154px;height:23px;margin-bottom:15px;background:url(../img/hdg-level1-01.png) no-repeat left top;text-indent:-99999px;}
+.hdg-level1-02{font-size: 12px;font-weight: bold;}
 
 /* ---------------------------------------
  section
