@@ -24,18 +24,18 @@ filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7fffffff,endcol
 .wardrobe-list li{float:left;margin:18px 18px 0 0;border:2px solid #afafaf;}
 
 .left-col{float:left;width:360px;}
-.right-col{float:right;width:475px;font-size:12px;line-height:1.4;}
-.photo-list li{float:left;margin-right:15px;width:165px;}
+.right-col{position:relative;float:right;width:475px;font-size:12px;line-height:1.4;}
+.photo-list li{float:left;margin-right:15px;width:165px;font-size:12px;}
 .photo-list .side{margin:15px 0 0;padding-left:50px;width:225px;}
-.photo-list span{display:block;text-align:center;}
+.photo-list span{display:block;margin:3px 0 0;text-align:center;}
 .photo-list img{border:1px solid #ccc;}
 .photo-list a{text-decoration:none;}
-.price{margin:5px 0 15px 1.5em;font-size:14px;}
+.price{margin:0 0 15px 0;font-size:14px;}
 .text-01,
-.flow-list{margin:0 0 15px 1.5em;}
+.flow-list{margin:0 0 15px 0;}
 .text-01 em{display:block;color:#F00;}
 .flow-list span{display:block;font-size:10px;}
-
+.prev-link{position:absolute;left:405px;bottom:-60px;}
 
 /*__________________________ clearfix __________________________*/
 .wardrobe-list:after,
