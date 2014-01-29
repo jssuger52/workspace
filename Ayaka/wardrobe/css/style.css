@@ -10,26 +10,53 @@ background:url('../img/bg-01.jpg') no-repeat;
 /* ---------------------------------------
  title
 --------------------------------------- */
-.hdg-level1-01{
-background:url(../img/hdg-level1-01.png) no-repeat left top;
-width:154px;
-height:23px;
-margin-bottom:10px;
-text-indent:-99999px;
-}
+.hdg-level1-01{width:154px;height:23px;margin-bottom:15px;background:url(../img/hdg-level1-01.png) no-repeat left top;text-indent:-99999px;}
+.hdg-level1-02{font-size: 14px;font-weight: bold;}
 
 /* ---------------------------------------
  section
 --------------------------------------- */
-.type-01{
-width:885px;
-height:0px;
-position:absolute;
-left:40px;
-top:50px
-}
-.sec-inner{padding:0 0 0 23px;height:390px;border:solid 1px #bfbfbf;background-color:rgba(255, 255, 255, 0.5);filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7fffffff,endcolorstr=#7fffffff,gradienttype=0);-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#7fffffff,endColorstr=#7fffffff)";zoom:1;}
-.gallery-list li{float:left;margin:18px 18px 0 0;border:2px solid #afafaf;}
+.type-01{position:absolute;left:40px;top:50px;width:885px;height:0px;}
+.sec-inner,
+.sec-list-inner{padding:0 0 0 23px;height:390px;border:solid 1px #bfbfbf;background-color:rgba(255, 255, 255, 0.5);
+filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7fffffff,endcolorstr=#7fffffff,gradienttype=0);-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#7fffffff,endColorstr=#7fffffff)";zoom:1;}
+.sec-list-inner{padding:20px 23px 0;height:415px;}
+.wardrobe-list li{float:left;margin:18px 18px 0 0;border:2px solid #afafaf;}
+
+.left-col{float:left;width:360px;}
+.right-col{position:relative;float:right;width:475px;font-size:12px;line-height:1.4;}
+.photo-list li{float:left;margin-right:15px;width:165px;font-size:12px;}
+.photo-list .side{margin:15px 0 0;padding-left:50px;width:225px;}
+.photo-list span{display:block;margin:3px 0 0;text-align:center;}
+.photo-list img{border:1px solid #ccc;}
+.photo-list a{text-decoration:none;}
+.price{margin:0 0 15px 0;font-size:14px;}
+.text-01,
+.flow-list{margin:0 0 15px 0;}
+.text-01 em{display:block;color:#F00;}
+.flow-list span{display:block;font-size:10px;}
+.prev-link{position:absolute;left:405px;bottom:-60px;}
+
+/*__________________________ clearfix __________________________*/
+.wardrobe-list:after,
+.sec-inner:after,
+.sec-list-inner:after,
+.photo-list:after{content:".";display:block;height:0;clear:both;visibility:hidden;line-height:0;}
+
+.wardrobe-list,
+.sec-inner,
+.sec-list-inner,
+.photo-list{display:block;min-height:1%;}
+
+*:first-child+html .wardrobe-list,
+*:first-child+html .sec-inner,
+*:first-child+html .sec-list-inner,
+*:first-child+html .photo-list{display:inline-table;zoom:1;}
+
+* html .wardrobe-list,
+* html .sec-inner,
+* html .sec-list-inner,
+* html .photo-list{zoom:1;}
 
 /* モニター幅960px以下 */
 @media only screen and (max-width:960px){
