@@ -3,167 +3,69 @@
 /* ---------------------------------------
  reset
 --------------------------------------- */
-body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td{
-margin:0;
-padding:0;
-}
-fieldset, img{
-border:0;
-}
-img{
-vertical-align:top;
-}
-address, caption, code, em, th, cite{
-font-style:normal;
-font-weight:normal;
-}
-table{
-border-spacing:0;
-}
-ol, ul{
-list-style:none;
-}
-h1, h2, h3, h4, h5, h6{
-font-size:100%;
-font-weight:normal;
-}
-caption, th {
-text-align:center;
-}
-hr{
-display:none;
-}
-header, footer, article, aside, nav, section{
-display:block;
-}
-time{
-display:inline;
-}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td{margin:0;padding:0;}
+fieldset, img{border:0;}
+img{vertical-align:top;}
+address, caption, code, em, th, cite{font-style:normal;font-weight:normal;}
+table{border-spacing:0;}
+ol, ul{list-style:none;}
+h1, h2, h3, h4, h5, h6{font-size:100%;font-weight:normal;}
+caption, th {text-align:center;}
+hr{display:none;}
+header, footer, article, aside, nav, section{display:block;}
+time{display:inline;}
 
 /* ---------------------------------------
  font/link
 --------------------------------------- */
-body,form,select{
-font-family:"ＭＳ Ｐゴシック","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,sans-serif;
-font-size:10px;
-color:#222;
-}
-a{
-color:#2f2922;
-text-decoration:underline;outline:none;
-}
-a:hover{
-color:#9B1313;
-text-decoration:none;outline:none;
-}
+body,form,select{font-family:"ＭＳ Ｐゴシック","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,sans-serif;font-size:10px;color:#222;}
+a{color:#2f2922;text-decoration:underline;outline:none;}
+a:hover{color:#9B1313;text-decoration:none;outline:none;}
 
 /* ---------------------------------------
  body/wrapper
 --------------------------------------- */
-html, body {
-background:#fcfaed;
-width:100%;
-height:100%;
-}
-.wrapper{
-width:960px;
-margin:15px auto 0;
-}
-.container{
-position:relative;
-height:600px;
-}
+html, body {background:#fcfaed;width:100%;height:100%;}
+.wrapper{width:960px;margin:15px auto 0;}
+.container{position:relative;height:600px;}
 
 /* ---------------------------------------
  header
 --------------------------------------- */
-.header{
-margin-bottom:5px;
-}
+.header{margin-bottom:5px;}
 .header .headerLogo a{background:url(../img/header-logo.png) no-repeat left top;display:block;width:237px;height:36px;}
 .header .headerLogo span{visibility:hidden;}
 
 /* ---------------------------------------
  gNav
 --------------------------------------- */
-.gNav{
-background-color:rgba(255, 255, 255, 0.5);
-filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7fffffff,endcolorstr=#7fffffff,gradienttype=0);
--ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#7fffffff,endColorstr=#7fffffff)";
-zoom:1;
-position:absolute;
-padding:8px 0;
-left:0;
-bottom:50px;
-width:100%;
-}
-.gNav ul{
-margin-left:212px;
-}
-.gNav li{
-float:left;
-margin-right:19px;
-}
-.gNav li a{
-display:block;
-height:13px;
-text-indent:-99999px;
-}
+.gNav{position:absolute;left:0;bottom:50px;width:100%;padding:8px 0;zoom:1;
+background-color:rgba(255, 255, 255, 0.5);filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7fffffff,endcolorstr=#7fffffff,gradienttype=0);-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#7fffffff,endColorstr=#7fffffff)";}
+.gNav ul{margin-left:212px;}
+.gNav li{float:left;margin-right:19px;}
+.gNav li a{display:block;height:13px;text-indent:-99999px;}
 .gNav li a:hover,
-.gNav li a.stay{
-background-position:0 -13px !important;
-}
-.gNav li.nav-01 a{
-background:url(../img/gNav-01.gif) no-repeat left top;
-width:30px;
-}
-.gNav li.nav-02 a{
-background:url(../img/gNav-02.gif) no-repeat left top;
-width:107px;
-}
-.gNav li.nav-03 a{
-background:url(../img/gNav-03.gif) no-repeat left top;
-width:74px;
-}
-.gNav li.nav-04 a{
-background:url(../img/gNav-04.gif) no-repeat left top;
-width:74px;
-}
-.gNav li.nav-05 a{
-background:url(../img/gNav-05.gif) no-repeat left top;
-width:85px;
-}
-.gNav li.nav-06 a{
-background:url(../img/gNav-06.gif) no-repeat left top;
-width:73px;
-}
+.gNav li a.stay{background-position:0 -13px !important;}
+.gNav li.nav-01 a{background:url(../img/gNav-01.gif) no-repeat left top;width:30px;}
+.gNav li.nav-02 a{background:url(../img/gNav-02.gif) no-repeat left top;width:107px;}
+.gNav li.nav-03 a{background:url(../img/gNav-03.gif) no-repeat left top;width:74px;}
+.gNav li.nav-04 a{background:url(../img/gNav-04.gif) no-repeat left top;width:74px;}
+.gNav li.nav-05 a{background:url(../img/gNav-05.gif) no-repeat left top;width:85px;}
+.gNav li.nav-06 a{background:url(../img/gNav-06.gif) no-repeat left top;width:73px;}
 
 /* ---------------------------------------
  footer
 --------------------------------------- */
-.footer{
-text-align:right;
-padding:0 0 15px;
-}
-.footer p{
-background:url(../img/copylight.gif) no-repeat right 8px;
-height:17px;
-}
-.footer p span{
-position:absolute;
-left:-99999px;
-}
+.footer{text-align:right;padding:0 0 15px;}
+.footer p{background:url(../img/copylight.gif) no-repeat right 8px;height:17px;}
+.footer p span{position:absolute;left:-99999px;}
 
 /* ---------------------------------------
 link
 --------------------------------------- */
 .link-list-01{width:150px;margin:0 auto;padding:15px 25px 0 5px;}
-.link-prev{
-float:left;
-}
-.link-next{
-float:right;
-}
+.link-prev{float:left;}
+.link-next{float:right;}
 .link-prev,
 .link-prev a{display:block;width:50px;height:13px;background:url(../img/link-prev.png) no-repeat left top;}
 .link-next,
@@ -180,16 +82,8 @@ float:right;
 /* ---------------------------------------
 other
 --------------------------------------- */
-noscript{
-color:#DF0101;
-font-weight:bold;
-display:block;
-margin-top:10px;
-text-align:center;
-}
-.clear{
-clear:both;
-}
+noscript{color:#DF0101;font-weight:bold;display:block;margin-top:10px;text-align:center;}
+.clear{clear:both;}
 
 /* ---------------------------------------
  clearfix
@@ -217,47 +111,19 @@ clear:both;
 /* ---------------------------------------
  margin/padding/align/float
 --------------------------------------- */
-.mb00{
-margin-bottom:0 !important;
-}
-.mb05{
-margin-bottom:5px !important;
-}
-.mb10{
-margin-bottom:10px !important;
-}
-.mb15{
-margin-bottom:15px !important;
-}
-.mb20{
-margin-bottom:20px !important;
-}
-
-.pb00{
-padding-bottom:0 !important;
-}
-.pb10{
-padding-bottom:10px !important;
-}
-.pb20{
-padding-bottom:20px !important;
-}
-
-.align-r{
-text-align:right !important;
-}
-.align-l{
-text-align:left !important;
-}
-.align-c{
-text-align:center !important;
-}
-.fl_l{
-float:left;
-}
-.fl_r{
-float:right;
-}
+.mb00{margin-bottom:0 !important;}
+.mb05{margin-bottom:5px !important;}
+.mb10{margin-bottom:10px !important;}
+.mb15{margin-bottom:15px !important;}
+.mb20{margin-bottom:20px !important;}
+.pb00{padding-bottom:0 !important;}
+.pb10{padding-bottom:10px !important;}
+.pb20{padding-bottom:20px !important;}
+.align-r{text-align:right !important;}
+.align-l{text-align:left !important;}
+.align-c{text-align:center !important;}
+.fl_l{float:left;}
+.fl_r{float:right;}
 
 /* モニター幅960px以下 */
 @media only screen and (max-width:960px){

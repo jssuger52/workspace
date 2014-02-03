@@ -18,17 +18,13 @@
 
 /*__________________________ tab __________________________*/
 .tab-container-03{width:100%;}
-.tab-container-03 .tab-btns{position:relative;margin-bottom:-1px;}
+.tab-container-03 .tab-btns{position:relative;}
 .tab-container-03 .tab-btns li{margin-right:0;display:inline;float:left;width:141px;text-align:center;}
-.tab-container-03 .tab-btns .last{margin-right:0;}
-.tab-container-03 .tab-btns a{display:block;padding-top:10px;width:141px;height:29px;border-top-left-radius:10px;border-top-right-radius:10px;background:#242D3E;color:#FFF;text-decoration:none;font-size:14px;}
-.tab-container-03 .tab-btns a:hover{opacity:0.8;filter: alpha(opacity=80);}
-.tab-container-03 .tab-btns .active a{padding-top:6px;width:133px;border:4px solid #091f48;border-bottom:none;}
-.tab-container-03 .tab-btns .active.last a{border:4px solid #720414;border-bottom:none;}
-.tab-container-03 .tab-btns .active a:hover{opacity:1;}
-.tab-container-03 .tab-btns .last a{background:#792F3A;}
-.tab-container-03 .tab-contents{
-padding:0 0 0 23px;height:390px;border:solid 1px #bfbfbf;background-color:rgba(255, 255, 255, 0.5);filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7fffffff,endcolorstr=#7fffffff,gradienttype=0);-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#7fffffff,endColorstr=#7fffffff)";zoom:1;}
+.tab-container-03 .tab-btns a{display:block;padding-top:10px;width:141px;height:29px;border-top-left-radius:10px;border-top-right-radius:10px;background:#c8c7c6;color:#444;text-decoration:none;font-size:14px;}
+.tab-container-03 .tab-btns a:hover{background:#dad8d7;}
+.tab-container-03 .tab-btns .active a{background:#e3e1df;}
+.tab-container-03 .tab-contents{padding:0 0 0 23px;height:390px;background-color:rgba(255, 255, 255, 0.5);
+filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7fffffff,endcolorstr=#7fffffff,gradienttype=0);-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#7fffffff,endColorstr=#7fffffff)";zoom:1;}
 .tab-container-03.active .tab-contents{position:absolute;left:-9999px;top:0;}
 .tab-container-03 .tab-contents.active{position:static;}
 

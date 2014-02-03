@@ -18,7 +18,7 @@ background:url('../img/bg-01.jpg') no-repeat;
 --------------------------------------- */
 .type-01{position:absolute;left:40px;top:50px;width:885px;height:0px;}
 .sec-inner,
-.sec-list-inner{padding:0 0 0 23px;height:390px;border:solid 1px #bfbfbf;background-color:rgba(255, 255, 255, 0.5);
+.sec-list-inner{padding:0 0 0 23px;height:390px;background-color:rgba(255, 255, 255, 0.5);
 filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7fffffff,endcolorstr=#7fffffff,gradienttype=0);-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#7fffffff,endColorstr=#7fffffff)";zoom:1;}
 .sec-list-inner{padding:20px 23px 0;height:415px;}
 .wardrobe-list li{float:left;margin:18px 18px 0 0;border:2px solid #afafaf;}
