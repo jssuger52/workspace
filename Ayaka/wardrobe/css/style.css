@@ -26,6 +26,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7fffffff,endcol
 .left-col{float:left;width:360px;}
 .right-col{position:relative;float:right;width:475px;font-size:12px;line-height:1.4;}
 .photo-list li{float:left;margin-right:15px;width:165px;font-size:12px;}
+.photo-list .right{margin-right:0;}
 .photo-list .side{margin:15px 0 0;padding-left:50px;width:225px;}
 .photo-list span{display:block;margin:3px 0 0;line-height:1;text-align:center;}
 .photo-list img{border:1px solid #ccc;}
