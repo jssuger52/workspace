@@ -20,14 +20,14 @@ background:url('../img/bg-01.jpg') no-repeat;
 .sec-inner,
 .sec-list-inner{padding:0 0 0 23px;height:390px;background-color:rgba(255, 255, 255, 0.5);
 filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7fffffff,endcolorstr=#7fffffff,gradienttype=0);-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#7fffffff,endColorstr=#7fffffff)";zoom:1;}
-.sec-list-inner{padding:20px 23px 0;height:435px;}
+.sec-list-inner{padding:20px 23px 0;height:425px;}
 .wardrobe-list li{float:left;margin:19px 19px 0 0;border:1px solid #afafaf;}
 
 .left-col{float:left;width:360px;}
 .right-col{position:relative;float:right;width:475px;font-size:12px;line-height:1.4;}
 .photo-list li{float:left;margin-right:15px;width:165px;font-size:12px;}
 .photo-list .side{margin:15px 0 0;padding-left:50px;width:225px;}
-.photo-list span{display:block;margin:3px 0 0;text-align:center;}
+.photo-list span{display:block;margin:3px 0 0;line-height:1;text-align:center;}
 .photo-list img{border:1px solid #ccc;}
 .photo-list a{text-decoration:none;}
 .price{margin:0 0 15px 0;font-size:14px;}
@@ -35,7 +35,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7fffffff,endcol
 .flow-list{margin:0 0 15px 0;}
 .text-01 em{display:block;color:#F00;}
 .flow-list span{display:block;font-size:10px;}
-.prev-link{position:absolute;left:405px;bottom:-70px;white-space:nowrap;}
+.prev-link{position:absolute;left:405px;bottom:-60px;white-space:nowrap;}
 
 /*__________________________ colorbox __________________________*/
 #cboxLoadedContent{margin-bottom:28px;}
