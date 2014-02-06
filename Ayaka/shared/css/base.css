@@ -66,7 +66,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7fffffff,endcol
 .gNav li.nav-06 a.stay{background-position:-303px -10px;}
 
 /* ---------------------------------------
- -10px footer
+footer
 --------------------------------------- */
 .footer{text-align:right;padding:0 0 15px;}
 .footer p{margin:0 2px 0 0;background:url(../img/copylight.gif) no-repeat right 8px;height:17px;}
@@ -75,7 +75,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7fffffff,endcol
 /* ---------------------------------------
 link
 --------------------------------------- */
-.link-list-01{width:150px;margin:0 auto;padding:15px 25px 0 5px;}
+.link-list-01{position:absolute;left:370px;bottom:20px;width:150px;}
 .link-prev{float:left;}
 .link-next{float:right;}
 .link-prev,
@@ -88,8 +88,7 @@ link
 .link-next span{visibility:hidden;}
 .link-prev a,
 .link-next a{opacity:1;filter: alpha(opacity=100);}
-.link-prev,
-.link-next{opacity:0.5;filter: alpha(opacity=50);}
+.link-none{opacity:0.5;filter: alpha(opacity=50);}
 
 /* ---------------------------------------
 other
