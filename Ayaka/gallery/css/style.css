@@ -19,8 +19,8 @@
 /*__________________________ tab __________________________*/
 .tab-container-03{width:100%;}
 .tab-container-03 .tab-btns{position:relative;}
-.tab-container-03 .tab-btns li{margin-right:0;display:inline;float:left;width:141px;text-align:center;}
-.tab-container-03 .tab-btns a{display:block;padding-top:10px;width:141px;height:29px;border-top-left-radius:10px;border-top-right-radius:10px;background:#c8c7c6;color:#444;text-decoration:none;font-size:14px;}
+.tab-container-03 .tab-btns li{margin-right:0;display:inline;float:left;width:141px;}
+.tab-container-03 .tab-btns a{display:block;width:141px;height:40px;border-top-left-radius:10px;border-top-right-radius:10px;background:#c8c7c6;overflow:hidden;}
 .tab-container-03 .tab-btns a:hover{background-color:rgba(255, 255, 255, 0.3);
 filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7fffffff,endcolorstr=#7fffffff,gradienttype=0);-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#7fffffff,endColorstr=#7fffffff)";zoom:1;}
 
@@ -32,6 +32,19 @@ background-color:rgba(255, 255, 255, 0.5);
 filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7fffffff,endcolorstr=#7fffffff,gradienttype=0);-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#7fffffff,endColorstr=#7fffffff)";zoom:1;}
 .tab-container-03.active .tab-contents{position:absolute;left:-9999px;top:0;}
 .tab-container-03 .tab-contents.active{position:static;}
+
+.tab-btns span{display:block;position:relative;margin:15px auto 0;overflow:hidden;}
+.tab-01 span{width:25px;height:9px;}
+.tab-02 span{width:84px;height:9px;}
+.tab-btns .sprite{position:absolute;}
+.tab-01 .sprite,
+.tab-01.active a:hover .sprite{left:0; top:0;}
+.tab-02 .sprite,
+.tab-02.active a:hover .sprite{left:-28px; top:0;}
+.tab-01 a:hover .sprite{left:0; top:-9px;}
+.tab-02 a:hover .sprite{left:-28px; top:-9px;}
+.tab-01.active a:hover,
+.tab-02.active a:hover{cursor:default;}
 
 /*__________________________ colorbox __________________________*/
 #cboxLoadedContent{margin-bottom:44px;}
