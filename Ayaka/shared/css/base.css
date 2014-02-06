@@ -26,13 +26,13 @@ a:hover{color:#9B1313;text-decoration:none;outline:none;}
  body/wrapper
 --------------------------------------- */
 html, body {background:#fcfaed;width:100%;height:100%;}
-.wrapper{width:960px;margin:30px auto 0;}
+.wrapper{width:960px;margin:60px auto 0;}
 .container{position:relative;height:600px;}
 
 /* ---------------------------------------
  header
 --------------------------------------- */
-.header{margin-bottom:10px;}
+.header{margin-bottom:15px;}
 .header .headerLogo a{background:url(../img/header-logo.png) no-repeat left top;display:block;width:237px;height:36px;}
 .header .headerLogo span{visibility:hidden;}
 
