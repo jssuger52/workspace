@@ -34,15 +34,15 @@ filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#7fffffff,endcol
 .tab-container-03 .tab-contents.active{position:static;}
 
 .tab-btns span{display:block;position:relative;margin:15px auto 0;overflow:hidden;}
-.tab-01 span{width:25px;height:9px;}
-.tab-02 span{width:84px;height:9px;}
+.tab-01 span{width:20px;height:7px;}
+.tab-02 span{width:73px;height:7px;}
 .tab-btns .sprite{position:absolute;}
 .tab-01 .sprite,
 .tab-01.active a:hover .sprite{left:0; top:0;}
 .tab-02 .sprite,
-.tab-02.active a:hover .sprite{left:-28px; top:0;}
-.tab-01 a:hover .sprite{left:0; top:-9px;}
-.tab-02 a:hover .sprite{left:-28px; top:-9px;}
+.tab-02.active a:hover .sprite{left:-20px; top:0;}
+.tab-01 a:hover .sprite{left:0; top:-7px;}
+.tab-02 a:hover .sprite{left:-20px; top:-7px;}
 .tab-01.active a:hover,
 .tab-02.active a:hover{cursor:default;}
 
