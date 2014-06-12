@@ -76,19 +76,17 @@ footer
 link
 --------------------------------------- */
 .link-list-01{position:absolute;left:370px;bottom:20px;width:150px;}
-.link-prev{float:left;}
-.link-next{float:right;}
 .link-prev,
-.link-prev a{display:block;width:50px;height:13px;background:url(../img/link-prev.png) no-repeat left top;}
-.link-next,
-.link-next a{display:block;width:50px;height:13px;background:url(../img/link-next.png) no-repeat left top;}
-.link-prev a:hover,
-.link-next a:hover{background-position:0 -13px;}
+.link-next{width:50px;height:13px;opacity:1;filter: alpha(opacity=100);cursor:pointer;}
+.link-prev{float:left;background:url(../img/link-prev.png) no-repeat left top;}
+.link-next{float:right;background:url(../img/link-next.png) no-repeat left top;}
+.link-prev:hover,
+.link-next:hover{background-position:0 -13px;}
+.link-prev.link-none:hover,
+.link-next.link-none:hover{background-position:0 0;}
 .link-prev span,
 .link-next span{visibility:hidden;}
-.link-prev a,
-.link-next a{opacity:1;filter: alpha(opacity=100);}
-.link-none{opacity:0.5;filter: alpha(opacity=50);}
+.link-none{opacity:0.5;filter: alpha(opacity=50);cursor:default;}
 
 /* ---------------------------------------
 other
@@ -136,17 +134,3 @@ noscript{color:#DF0101;font-weight:bold;display:block;margin-top:10px;text-align
 .align-c{text-align:center !important;}
 .fl_l{float:left;}
 .fl_r{float:right;}
-
-/* Phone Landscape (480px) */
-@media only screen and (min-width:321px) and (max-width:480px) and (orientation:landscape){
-.header{width:100%;}
-.wrapper{width:480px;}
-.footer{width:100%;}
-}
-
-/* Phone Portrait (320px) */
-@media only screen and (max-width:320px) {
-.header{width:100%;}
-.wrapper{width:480px;margin:auto auto;}
-.footer{width:100%;}
-}
