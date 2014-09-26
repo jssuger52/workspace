@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+/*
+reset
+------------------------------------------------------------------*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+fieldset,img{border:0;vertical-align:bottom;}
+address,caption,code,em,th{font-style:normal;font-weight:normal;}
+table{border-spacing:0;}
+ol,ul{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+caption,th{text-align:left;}
+hr{display:none;}
+
+/*
+要素
+------------------------------------------------------------------*/
+*{outline:none;}
+body{margin:0;padding:0;background:#FFF;font-size:14px;color:#333;line-height:1.1;}
+img{border:none;vertical-align:top;}
+input{vertical-align:middle;}
+table{border-collapse:collapse;border:none;}
+hr,.displayNone{display:none;}
+i,em,address,cite{font-style:normal;}
+time{display:inline;}
+
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.clearfix{overflow:hidden;min-height:1em;}
+/*\*/
+* html .clearfix{height:1%;overflow:visible;}
+.clearfix{display:block;}
+/**/
+
+body,form,select{font-family:"メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","ＭＳ Ｐゴシック","MS PGothic",sans-serif;}
+a{color:#13519b;text-decoration:none;}
+a:visited{color:#13519b;}
+a:hover{color:#136D96;}
+
+/* html5 対応 */
+header,footer,article,aside,nav,section,figure{display:block;}
+
+/* ワイヤーフレーム */
+.wrapper{width:810px;margin:0 auto;padding:0;text-align:left;}
+.container{width:100%;margin:0 auto;padding:0;}
+
+/*
+header
+------------------------------------------------------------------*/
+.header{width:100%;margin:0;padding:20px 0;}
+.header-logo{margin:0;padding:0 0 30px;}
+
+/*
+gnav
+------------------------------------------------------------------*/
+.gnav li{float:left;padding:8px 19px;border-right:1px solid #333;text-align:center;}
+.gnav .gnav-list-01{width:50px;}
+.gnav .gnav-list-02{width:54px;}
+.gnav .gnav-list-03{width:80px;}
+.gnav .gnav-list-04{width:141px;}
+.gnav .gnav-list-05{width:64px;}
+.gnav .gnav-list-06{width:52px;}
+.gnav .gnav-list-07{width:93px;border:none;}
+.gnav a{position:relative;display:block;height:13px;overflow:hidden;}
+.gnav img{position:absolute;left:0;top:0;}
+.gnav a:hover img,
+.gnav .selected img{left:0;top:-14px;}
+
+/*
+footer
+------------------------------------------------------------------*/
+.footer{width:100%;margin:20px 0 0;padding:10px 0;border-top:1px solid #DDD;text-align:right;}
+.footer-copyright{margin:0;padding:0;color:#333;}
+
+/*
+共通スタイル
+------------------------------------------------------------------*/
+.sec-type-a{width:704px;margin:20px;}
+
+/*
+top
+------------------------------------------------------------------*/
+.top-main{}
+.top-sec-a{float:left;width:439px;height:200px;overflow:auto;}
+.top-sec-a dl{padding:10px;}
+.top-sec-a dt,
+.top-sec-a dd{float:left;font-size:12px;}
+.top-sec-a dt{width:80px;margin:0 10px 10px 0;}
+.top-sec-a dd{width:329px;margin:0 0 10px 0;}
+.top-sec-b{float:right;width:320px;height:200px;overflow:hidden;}
+
+/*
+news
+------------------------------------------------------------------*/
+.news-main{width:791px;height:511px;margin:0 auto;background:url(../img/news-bg-01.jpg) no-repeat left top;overflow:auto;}
+.news-main dl{padding:20px 10px;}
+.news-main dt,
+.news-main dd{float:left;font-size:12px;}
+.news-main dt{width:80px;margin:0 10px 10px 0;}
+.news-main dd{width:594px;margin:0 0 10px 0;}
+
+/*
+profile
+------------------------------------------------------------------*/
+.profile-main{width:791px;height:511px;margin:0 auto;background:url(../img/profile-bg-01.jpg) no-repeat left top;overflow:auto;}
