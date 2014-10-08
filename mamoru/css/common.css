@@ -46,7 +46,7 @@ header,footer,article,aside,nav,section,figure{display:block;}
 /*
 header
 ------------------------------------------------------------------*/
-.header{width:100%;margin:0;padding:20px 0;}
+.header{width:100%;margin:0;padding:40px 0 20px;}
 .header-logo{margin:0;padding:0 0 30px;}
 
 /*
@@ -75,30 +75,45 @@ footer
 共通スタイル
 ------------------------------------------------------------------*/
 .sec-type-a{width:704px;margin:20px;}
+.sec-inner-a{padding:20px 10px 0;}
 
 /*
 top
 ------------------------------------------------------------------*/
-.top-main{}
 .top-sec-a{float:left;width:439px;height:200px;overflow:auto;}
-.top-sec-a dl{padding:10px;}
-.top-sec-a dt,
-.top-sec-a dd{float:left;font-size:12px;}
-.top-sec-a dt{width:80px;margin:0 10px 10px 0;}
-.top-sec-a dd{width:329px;margin:0 0 10px 0;}
+.top-sec-a ul{padding:10px;}
+.top-sec-a li{margin:0 0 10px;font-size:12px;line-height:1.2;}
+.top-sec-a time{width:80px;margin:0 10px 10px 0;}
+.top-sec-a span{width:329px;margin:0 0 10px 0;}
 .top-sec-b{float:right;width:320px;height:200px;overflow:hidden;}
+.top-youtube{padding:10px 0 0;}
 
 /*
 news
 ------------------------------------------------------------------*/
 .news-main{width:791px;height:511px;margin:0 auto;background:url(../img/news-bg-01.jpg) no-repeat left top;overflow:auto;}
-.news-main dl{padding:20px 10px;}
-.news-main dt,
-.news-main dd{float:left;font-size:12px;}
-.news-main dt{width:80px;margin:0 10px 10px 0;}
-.news-main dd{width:594px;margin:0 0 10px 0;}
+.news-list-a li{margin:0 0 10px;font-size:12px;line-height:1.2;}
+.news-list-a time{width:80px;margin:0 10px 10px 0;}
+.news-list-a span{width:594px;margin:0 0 10px 0;}
 
 /*
 profile
 ------------------------------------------------------------------*/
 .profile-main{width:791px;height:511px;margin:0 auto;background:url(../img/profile-bg-01.jpg) no-repeat left top;overflow:auto;}
+.profile-sec-inner{width:360px;margin:20px 10px;font-size:12px;line-height:1.5;}
+.profile-dl dt{margin:0 0 5px;font-size:30px;}
+.profile-dl dd{margin:0 0 20px;font-size:20px;}
+.profile-ttl-a{margin:15px 0 0;font-size:14px;}
+.profile-list time{width:60px;margin:0 10px 10px 0;}
+.profile-list span{width:290px;margin:0 0 10px 0;}
+.profile-text-a{margin:10px 0 0;text-align:right;}
+
+/*
+discography
+------------------------------------------------------------------*/
+.discography-main{width:791px;height:511px;margin:0 auto;background:url(../img/discography-bg-01.jpg) no-repeat left top;overflow:auto;}
+.discography-col-a{margin:0 0 20px;}
+.discography-col-a p{width:495px;float:right;font-size:12px;line-height:1.2;}
+.discography-col-a figure{float:left;margin:0;}
+.discography-dl dt{margin:0 0 5px;font-size:14px;}
+.discography-dl dd{font-size:12px;line-height:1.5;}
