@@ -10,7 +10,7 @@ if ($menu_mobile_class || $menu_float_class) {
 echo '<div id="header_container"'.$menu_float_class.'>';
 
 // Widget
-if (is_active_sidebar('widget-header-toggle-content')) : 
+if (is_active_sidebar('widget-header-toggle-content')) :
 ?>
 <section id="header-toggle-content" class="clearfix">
 <div id="header-toggle-content-inner">
@@ -18,8 +18,8 @@ if (is_active_sidebar('widget-header-toggle-content')) :
 </div>
 <div id="header-toggle-btn" class="icon-plus"><span>Toggle</span></div>
 </section>
-<?php 
-endif; 
+<?php
+endif;
 ?>
 <header id="header_area">
 <div id="header_content" class="clearfix">
@@ -56,7 +56,7 @@ if (is_front_page() && !is_paged() && have_posts() && !isset( $_REQUEST['q']) ) 
 	// Check the display position
 	if (isset($options['disable_menu_float']) && isset($options_visual['dp_header_img_fixed'])) {
 		$header_fixed_class = ' img_fixed';
-	} 
+	}
 	else if (!isset($options['disable_menu_float']) && isset($options_visual['dp_header_img_fixed'])) {
 		$header_fixed_class = ' menu_img_fixed';
 	}
@@ -67,6 +67,9 @@ if (is_front_page() && !is_paged() && have_posts() && !isset( $_REQUEST['q']) ) 
 	}
 	// Header banner outer tag
 	$banner_sec_tag = '<section class="header-banner-outer sl_loading'.$header_fixed_class.$header_half_class.'">';
+
+	// Header banner title
+	echo '<h1 class="header-banner-ttl">メーカー認定!クリナップ製品のお取り付け<br />キッチンリフォームのサントラストへストへ</h1>';
 
 	// Get header banner image
 	$banner_contents_code = dp_banner_contents();

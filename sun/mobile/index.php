@@ -1,4 +1,4 @@
-<?php 
+<?php
 /* ------------------------------------------
    This template is for mobile device!!!!!!!
  ------------------------------------------*/
@@ -28,7 +28,17 @@ if (is_home() && !is_paged() &&  !isset( $_REQUEST['q']) ) :
 	dp_headline();
 ?>
 <div id="container" class="container top<?php echo $has_header_class; ?>">
-<?php 
+<div>
+ごあいさつ
+株式会社サントラスト代表 三村宏のごあいさつです
+
+メーカー認定と?
+長きにわたってクリナップ商品を専門に販売や取り付け工事を行っている特約施工店です
+
+修理依頼できる?
+修理専門スタッフも常駐困ったことがあれ􏰂お気軽にお問い合わせください
+</div>
+<?php
 else :
 	$page_title = dp_current_page_title(false);
 	if ($page_title) {
@@ -36,7 +46,7 @@ else :
 	}
 ?>
 <div id="container" class="container mb-theme clearfix">
-<?php 
+<?php
 endif;
 
 // **********************************
@@ -46,7 +56,7 @@ if (is_active_sidebar('widget-top-container-mobile')) : ?>
 <div id="top-container-widget" class="clearfix">
 <?php dynamic_sidebar( 'widget-top-container-mobile' ); ?>
 </div>
-<?php 
+<?php
 endif;
 
 // **********************************
@@ -72,7 +82,7 @@ endif;	// End of have_posts()
 // Breadcrumb
 // **********************************
 if (is_home() && is_paged())  {
-	echo '<div id="dp_breadcrumb_div">'.dp_breadcrumb(false).'</div>';	
+	echo '<div id="dp_breadcrumb_div">'.dp_breadcrumb(false).'</div>';
 }
 ?>
 </div><?php // end of #container

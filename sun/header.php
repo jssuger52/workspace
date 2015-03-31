@@ -9,50 +9,50 @@ global $options, $options_visual;
 <head prefix="og:http://ogp.me/ns# fb:http://ogp.me/ns/fb# blog:http://ogp.me/ns/website#">
 <?php endif; ?>
 <meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-<?php 
-if ( (is_home() || is_archive()) && is_paged()) : 
+<?php
+if ( (is_home() || is_archive()) && is_paged()) :
 ?>
 <meta name="robots" content="noindex,follow" />
 <?php
 elseif ( is_singular() ) :
-	if (get_post_meta(get_the_ID(), 'dp_noindex', true) && 
-		get_post_meta(get_the_ID(), 'dp_nofollow', true) && 
+	if (get_post_meta(get_the_ID(), 'dp_noindex', true) &&
+		get_post_meta(get_the_ID(), 'dp_nofollow', true) &&
 		get_post_meta(get_the_ID(), 'dp_noarchive', true)) :
 ?>
 <meta name="robots" content="noindex,nofollow,noarchive" />
 <?php
-	elseif (get_post_meta(get_the_ID(), 'dp_noindex', true) && 
-		get_post_meta(get_the_ID(), 'dp_nofollow', true) && 
-		!get_post_meta(get_the_ID(), 'dp_noarchive', true)) : 
+	elseif (get_post_meta(get_the_ID(), 'dp_noindex', true) &&
+		get_post_meta(get_the_ID(), 'dp_nofollow', true) &&
+		!get_post_meta(get_the_ID(), 'dp_noarchive', true)) :
 ?>
 <meta name="robots" content="noindex,nofollow" />
 <?php
-	elseif (get_post_meta(get_the_ID(), 'dp_noindex', true) && 
-		!get_post_meta(get_the_ID(), 'dp_nofollow', true) && 
+	elseif (get_post_meta(get_the_ID(), 'dp_noindex', true) &&
+		!get_post_meta(get_the_ID(), 'dp_nofollow', true) &&
 		!get_post_meta(get_the_ID(), 'dp_noarchive', true)) :
 ?>
 <meta name="robots" content="noindex" />
 <?php
-	elseif (!get_post_meta(get_the_ID(), 'dp_noindex', true) && 
-		get_post_meta(get_the_ID(), 'dp_nofollow', true) && 
+	elseif (!get_post_meta(get_the_ID(), 'dp_noindex', true) &&
+		get_post_meta(get_the_ID(), 'dp_nofollow', true) &&
 		get_post_meta(get_the_ID(), 'dp_noarchive', true)) :
 ?>
 <meta name="robots" content="nofollow,noarchive" />
 <?php
-	elseif (!get_post_meta(get_the_ID(), 'dp_noindex', true) && 
-		!get_post_meta(get_the_ID(), 'dp_nofollow', true) && 
+	elseif (!get_post_meta(get_the_ID(), 'dp_noindex', true) &&
+		!get_post_meta(get_the_ID(), 'dp_nofollow', true) &&
 		get_post_meta(get_the_ID(), 'dp_noarchive', true)) :
 ?>
 <meta name="robots" content="noarchive" />
 <?php
-	elseif (!get_post_meta(get_the_ID(), 'dp_noindex', true) && 
-		get_post_meta(get_the_ID(), 'dp_nofollow', true) && 
+	elseif (!get_post_meta(get_the_ID(), 'dp_noindex', true) &&
+		get_post_meta(get_the_ID(), 'dp_nofollow', true) &&
 		!get_post_meta(get_the_ID(), 'dp_noarchive', true)) :
 ?>
 <meta name="robots" content="nofollow" />
 <?php
-	elseif (get_post_meta(get_the_ID(), 'dp_noindex', true) && 
-		!get_post_meta(get_the_ID(), 'dp_nofollow', true) && 
+	elseif (get_post_meta(get_the_ID(), 'dp_noindex', true) &&
+		!get_post_meta(get_the_ID(), 'dp_nofollow', true) &&
 		get_post_meta(get_the_ID(), 'dp_noarchive', true)) :
 ?>
 <meta name="robots" content="noindex,noarchive" />
@@ -67,8 +67,9 @@ dp_meta_kw_desc();
 // show OGP
 dp_show_ogp();
 ?>
+<link rel="stylesheet" href="/css/common.css" media="all" />
 <link rel="stylesheet" href="<?php echo DP_THEME_URI . '/css/style.css?' . date('His'); ?>" media="screen, print" />
-<?php 
+<?php
 // Custom CSS
 if ( file_exists( DP_UPLOAD_DIR . '/css/visual-custom.css') ) :
 ?>
@@ -116,8 +117,8 @@ _EOD_;
 // Google Custom Search
 if ($options['gcs_id'] !== '') :  ?>
 <script>(function(){var cx='<?php echo $options['gcs_id']; ?>';var gcse=document.createElement('script'); gcse.type = 'text/javascript';gcse.async=true;gcse.src=(document.location.protocol=='https:'?'https:':'http:')+'//www.google.com/cse/cse.js?cx='+cx;var s =document.getElementsByTagName('script')[0];s.parentNode.insertBefore(gcse,s);})();</script>
-<?php 
-endif; 
+<?php
+endif;
 
 // HTML5 for IE8 below... DO NOT MOVE THIS TO FOOTER.
 echo '<!--[if lt IE 9]><script src="' . DP_THEME_URI . '/inc/js/html5shiv-min.js"></script><script src="' . DP_THEME_URI . '/inc/js/selectivizr-min.js"></script><![endif]-->';
