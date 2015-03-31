@@ -67,8 +67,8 @@ dp_meta_kw_desc();
 // show OGP
 dp_show_ogp();
 ?>
-<link rel="stylesheet" href="/css/common.css" media="all" />
 <link rel="stylesheet" href="<?php echo DP_THEME_URI . '/css/style.css?' . date('His'); ?>" media="screen, print" />
+<link rel="stylesheet" href="http://santorasuto.sakura.ne.jp/wp-content/themes/dp-graphie/css/common.css" media="all" />
 <?php
 // Custom CSS
 if ( file_exists( DP_UPLOAD_DIR . '/css/visual-custom.css') ) :
