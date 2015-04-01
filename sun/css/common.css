@@ -6,19 +6,41 @@
 /* 共通ページタイトル */
 .single-article header,
 .single-article header .single-title{border:none;}
-.single-article header .single-title{margin:0 0 30px;padding:10px;background:#390707;font-size:18px;color:#fff;text-align:left;}
+.single-article header{margin:0;padding:0;background:#71cfb8;font-size:18px;color:#fff;text-align:left;}
+.single-article header .single-title{margin:0;padding:10px;background:#71cfb8;font-size:18px;color:#fff;text-align:left;}
 
 /* 見出し */
 .ttl-type-01{}
 .rcm-item-ttl{}
 
 /* テーブル */
-.tbl-type01{width:100%;border-collapse:collapse;font-size:14px;line-height:1.2;}
+.tbl-type01{width:100%;border-collapse:collapse;font-size:14px;line-height:1.4;}
 .tbl-type01 th{width:35%;padding:6px;background-color:#eee;border:1px solid #b9b9b9;font-weight:normal;text-align:left;}
 .tbl-type01 td{padding:6px;border:1px solid #b9b9b9;background-color:#fff;}
 .font-size-l{font-size:20px;color:#f00;}
 .font-color-red{color:#f00;}
 
-/* 余白の調整 */
-.entry ul,
-.entry ol{margin:0;padding:0;}
+.entry,
+.entry ul{padding:0;}
+.entry .rcm-list01{margin:0 0 10px 20px;padding:0;}
+.content table{margin:0;padding:0;}
+.content dl{margin:0 0 15px;padding:0;}
+.entry p{padding:0 0 15px;}
+#container{padding:15px 20px;}
+.single_post_meta,
+.comment-respond,
+.trackback_url_area{display:none;}
+#loop-section.magazine
+.loop-article,
+.single-article,
+.dp_related_posts,
+.content
+.trackback_url_area,
+#comment_section,
+#respond,
+#commentform,
+.fb-like-box,
+.widget-box,
+.ft-widget-box,
+#searchform{margin:0;border:none;}
+nav.navigation{margin:0 auto;}
