@@ -1,0 +1,40 @@
+[color]
+        ui = auto
+        branch = auto
+[color "decolate"]
+        current = cyan
+        local = green
+        remote = red
+[gui]
+        encoding = utf-8
+[alias]
+        lg = log --graph --decorate --oneline --abbrev --relative-date --topo-order
+        lga = log --graph --decorate --oneline --abbrev --date=relative --topo-order --all
+        ci = commit -m
+        co = checkout
+        lgf = log --graph --all --date=short --pretty='%C(yellow)%h%Creset %C(cyan bold)%d%Creset %s %Cgreen[%cd]%Creset' --decorate
+        br = branch
+        st = status
+        mg = merge
+        dfc = diff --cached
+        localsvndc = svn dcommit
+        ps = push -u origin
+        ex = archive --prefix=2015/ HEAD
+        ch = diff --name-status
+        dft = difftool
+        reupm = reset --hard upstream/master
+        reups = reset --hard upstream/stg
+        reup = reset --hard
+        fh = fetch
+        fha = fetch --all
+        fhu = fetch upstream
+        fho = fetch origin
+        pl = pull origin
+        plup = pull origin master:upstream
+[merge]
+        tool = diffmerge
+[mergetool]
+        keepBackup = false
+[mergetool "diffmerge"]
+        cmd = diffmerge --merge --result=$MERGED $LOCAL $BASE $REMOTE
+        trustExitCode = true

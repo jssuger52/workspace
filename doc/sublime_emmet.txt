@@ -1,0 +1,27 @@
+{
+    "snippets": {
+        "html": {
+            "snippets": {
+                "html5": "<!doctype html>\n<html lang=\"ja\">\n<head>\n<meta charset=\"${charset}\">\n<meta name=\"keywords\" content=\"\">\n<meta name=\"description\" content=\"\">\n<title>${1:Document}</title>\n</head>\n<body>\n\t${child}${2}\n</body>\n</html>",
+                "dldt": "<dl>\n<dt>${child}</dt>\n<dd></dd>\n</dl>",
+                "cl": "class=\"\"",
+                "sec": "<section></section>",
+                "al": "alt=\"\"",
+                "cle": "clearfix",
+                "spa": "&nbsp;",
+                "bor": "border-radius:;",
+                "and": "&amp;",
+                "cop": "&copy;",
+                "sty": "style=\"\""
+            }
+        },
+        "css": {
+                    "snippets": {
+                        "bor": "border-radius:;"
+                    }
+                }
+    },
+    "preferences": {
+    "css.valueSeparator": ":"
+    }
+}
