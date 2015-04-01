@@ -308,7 +308,7 @@ if (!$options['disable_mobile_fast']) {
 /****************************************************************
 * Fix original "the_excerpt" function.
 ****************************************************************/
-remove_filter('the_excerpt', 'wpautop'); 
+remove_filter('the_excerpt', 'wpautop');
 function dp_del_from_excerpt($str){
 	$str = preg_replace("/(\r|\n|\r\n)/m", " ", $str);
 	$str = preg_replace("/　/", "", $str); //del multibyte space
@@ -355,8 +355,8 @@ add_filter( 'the_content_more_link', 'dp_custom_content_more_link' );
 ****************************************************************/
 function theme_new_tag_cloud($args) {
 	$myargs = array(
-		'smallest'	=> 11, 
-		'largest'	=> 11, 
+		'smallest'	=> 11,
+		'largest'	=> 11,
 		'unit'		=> 'px',
 		'number' 	=> 45,
 		'orderby'	=> 'count',
@@ -427,7 +427,7 @@ function remove_private($s) {
 add_filter('protected_title_format', 'remove_private');
 
 function dp_password_form() {
-	$custom_phrase = 
+	$custom_phrase =
 '<p class="need-pass-title label label-orange icon-lock">'.__('Protected','DigiPress').'</p>'.__('Please type the password to read this page.', 'DigiPress').'
 <div id="protectedForm"><form action="' . site_url() . '/wp-login.php?action=postpass" method="post"><input name="post_password" type="password" size="24" /><input type="submit" name="Submit" value="' . esc_attr__("Submit") . '" />
 </form></div>';
@@ -507,28 +507,28 @@ add_filter('post_class', 'dp_remove_hentry');
  ***************************************************************/
 function get_comments_popup_link( $zero = false, $one = false, $more = false, $css_class = '', $none = false ) {
     global $wpcommentspopupfile, $wpcommentsjavascript;
- 
+
     $id = get_the_ID();
- 
+
     if ( false === $zero ) $zero = __( 'No Comments','DigiPress' );
     if ( false === $one ) $one = __( 'Comment(1)','DigiPress' );
     if ( false === $more ) $more = __( 'Comments(%)','DigiPress' );
     if ( false === $none ) $none = __( 'Comments Off','DigiPress' );
- 
+
     $number = get_comments_number( $id );
- 
+
     $str = '';
- 
+
     if ( 0 == $number && !comments_open() && !pings_open() ) {
         $str = '<span' . ((!empty($css_class)) ? ' class="' . esc_attr( $css_class ) . '"' : '') . '>' . $none . '</span>';
         return $str;
     }
- 
+
     if ( post_password_required() ) {
         $str = __('Enter your password to view comments.','DigiPress');
         return $str;
     }
- 
+
     $str = '<a href="';
     if ( $wpcommentsjavascript ) {
         if ( empty( $wpcommentspopupfile ) )
@@ -544,18 +544,18 @@ function get_comments_popup_link( $zero = false, $one = false, $more = false, $c
             $str .= get_comments_link();
         $str .= '"';
     }
- 
+
     if ( !empty( $css_class ) ) {
         $str .= ' class="'.$css_class.'" ';
     }
     $title = the_title_attribute( array('echo' => 0 ) );
- 
+
     $str .= apply_filters( 'comments_popup_link_attributes', '' );
- 
+
     $str .= ' title="' . esc_attr( sprintf( __('Comment on %s','DigiPress'), $title ) ) . '">';
     $str .= get_comments_number_str( $zero, $one, $more );
     $str .= '</a>';
-     
+
     return $str;
 }
 /**
@@ -564,16 +564,16 @@ function get_comments_popup_link( $zero = false, $one = false, $more = false, $c
 function get_comments_number_str( $zero = false, $one = false, $more = false, $deprecated = '' ) {
     if ( !empty( $deprecated ) )
         _deprecated_argument( __FUNCTION__, '1.3' );
- 
+
     $number = get_comments_number();
- 
+
     if ( $number > 1 )
         $output = str_replace('%', number_format_i18n($number), ( false === $more ) ? __('Comments(%)', 'DigiPress') : $more);
     elseif ( $number == 0 )
         $output = ( false === $zero ) ? __('No Comments', 'DigiPress') : $zero;
     else // must be one
         $output = ( false === $one ) ? __('Comment(1)', 'DigiPress') : $one;
- 
+
     return apply_filters('comments_number', $output, $number);
 }
 
@@ -585,7 +585,7 @@ function get_comments_number_str( $zero = false, $one = false, $more = false, $d
 function dp_number_posts_per_archive( $query ) {
 	if (is_admin()) return;
 	global $options, $IS_MOBILE_DP;
-	
+
 	$suffix = '';
 
 	if ( $query->is_main_query() ) {
@@ -601,18 +601,18 @@ function dp_number_posts_per_archive( $query ) {
 				if ($options['index_bottom_except_cat']) {
 					// Add nimus each category id
 					$cat_ids = preg_replace('/(\d+)/', '-${1}', $options['index_bottom_except_cat_id']);
-					
+
 					$query->set( 'cat', $cat_ids );
-					
+
 				} else {
 					$query->set( 'cat', $options['specific_cat_index'] );
 				}
-				
+
 			} else if ($options['show_specific_cat_index'] === 'custom') {
 				// Show specific custom post type
 				$query->set( 'posts_per_page', $options['number_posts_index'.$suffix] );
 				$query->set( 'post_type', $options['specific_post_type_index'] );
-				
+
 			} else {
 				$query->set( 'posts_per_page', $options['number_posts_index'.$suffix] );
 			}
@@ -754,8 +754,8 @@ add_action('wp_enqueue_scripts', 'dp_load_jquery', 1);
 function dp_inline_footer() {
 	global $options, $current_user;
 	get_currentuserinfo();
-	
-	// User Agent check (IE9 only) DO NOT MOVE THIS TO FOOTER. 
+
+	// User Agent check (IE9 only) DO NOT MOVE THIS TO FOOTER.
 	$js_check_ie9 = <<<_EOD_
 <!--[if lte IE 9]>
 <script type="text/javascript">
@@ -785,7 +785,7 @@ _EOD_;
 	if ( $options['tracking_code'] ) {
 		$traceCode = "<!-- Tracking Code -->" . $options['tracking_code'] . "<!-- /Tracking Code -->";
 	}
-	
+
 	//Run only user logged in...
 	if ( is_user_logged_in() ) {
 		if ( $current_user->user_level == 10 ) {
@@ -799,4 +799,16 @@ _EOD_;
 	// dp_theme_noactivate_copyright();
 }
 add_action('wp_footer', 'dp_inline_footer', 100);
+
+// auto paragraph解除
+add_action('init', function() {
+	remove_filter('the_excerpt', 'wpautop');
+	remove_filter('the_content', 'wpautop');
+});
+
+add_filter('tiny_mce_before_init', function($init) {
+	$init['wpautop'] = false;
+	$init['apply_source_formatting'] = ture;
+	return $init;
+});
 ?>
