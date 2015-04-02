@@ -20,6 +20,12 @@
 .font-size-l{font-size:20px;color:#f00;}
 .font-color-red{color:#f00;}
 
+/* カラム */
+.col-wrap{position:relative;}
+.col-type01{width:630px;margin:0;padding:0;}
+.col-type02{width:400px;margin:0;padding:0;}
+
+/* レイアウト調整 */
 .entry,
 .entry ul{padding:0;}
 .entry .rcm-list01{margin:0 0 10px 20px;padding:0;}
