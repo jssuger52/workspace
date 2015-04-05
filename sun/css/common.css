@@ -24,15 +24,22 @@
 /* カラム */
 .col-wrap{position:relative;}
 .col-type01{width:630px;margin:0;padding:0;}
-.col-type02{width:400px;margin:0;padding:0;}
-.col-type03{border:1px solid #ccc;}
+.col-type02{width:470px;margin:0;padding:0;}
+.col-type03{margin:10px 0; padding:10px;border:1px solid #ccc;background:#EBFEFE;}
+.col-left{float:left;}
+.col-right{float:right;}
+
+/* 画像 */
+.img-type01{float:right;width:300px;border:1px solid #ccc;}
 
 /* 送信ボタン */
-input#submi{background:#ffaf51;}
+.entry input[type="submit"],
+input#submit{background:#ffaf51 !important;}
 
 /* レイアウト調整 */
 .entry,
-.entry ul{padding:0;}
+.entry img,
+.entry ul{margin:0;padding:0;}
 .entry .rcm-list01{margin:0 0 10px 20px;padding:0;}
 .content table{margin:0;padding:0;}
 .content dl{margin:0 0 15px;padding:0;}
@@ -55,3 +62,4 @@ input#submi{background:#ffaf51;}
 .ft-widget-box,
 #searchform{margin:0;border:none;}
 nav.navigation{margin:0 auto;}
+.wpcf7-form textarea{width:70%;}

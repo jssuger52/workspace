@@ -9,50 +9,50 @@ global $options, $options_visual;
 <head prefix="og:http://ogp.me/ns# fb:http://ogp.me/ns/fb# blog:http://ogp.me/ns/website#">
 <?php endif; ?>
 <meta charset="UTF-8" /><meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /><meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-<?php 
-if ( (is_home() || is_archive()) && is_paged()) : 
+<?php
+if ( (is_home() || is_archive()) && is_paged()) :
 ?>
 <meta name="robots" content="noindex,follow" />
 <?php
 elseif ( is_singular() ) :
-	if (get_post_meta(get_the_ID(), 'dp_noindex', true) && 
-		get_post_meta(get_the_ID(), 'dp_nofollow', true) && 
+	if (get_post_meta(get_the_ID(), 'dp_noindex', true) &&
+		get_post_meta(get_the_ID(), 'dp_nofollow', true) &&
 		get_post_meta(get_the_ID(), 'dp_noarchive', true)) :
 ?>
 <meta name="robots" content="noindex,nofollow,noarchive" />
 <?php
-	elseif (get_post_meta(get_the_ID(), 'dp_noindex', true) && 
-		get_post_meta(get_the_ID(), 'dp_nofollow', true) && 
-		!get_post_meta(get_the_ID(), 'dp_noarchive', true)) : 
+	elseif (get_post_meta(get_the_ID(), 'dp_noindex', true) &&
+		get_post_meta(get_the_ID(), 'dp_nofollow', true) &&
+		!get_post_meta(get_the_ID(), 'dp_noarchive', true)) :
 ?>
 <meta name="robots" content="noindex,nofollow" />
 <?php
-	elseif (get_post_meta(get_the_ID(), 'dp_noindex', true) && 
-		!get_post_meta(get_the_ID(), 'dp_nofollow', true) && 
+	elseif (get_post_meta(get_the_ID(), 'dp_noindex', true) &&
+		!get_post_meta(get_the_ID(), 'dp_nofollow', true) &&
 		!get_post_meta(get_the_ID(), 'dp_noarchive', true)) :
 ?>
 <meta name="robots" content="noindex" />
 <?php
-	elseif (!get_post_meta(get_the_ID(), 'dp_noindex', true) && 
-		get_post_meta(get_the_ID(), 'dp_nofollow', true) && 
+	elseif (!get_post_meta(get_the_ID(), 'dp_noindex', true) &&
+		get_post_meta(get_the_ID(), 'dp_nofollow', true) &&
 		get_post_meta(get_the_ID(), 'dp_noarchive', true)) :
 ?>
 <meta name="robots" content="nofollow,noarchive" />
 <?php
-	elseif (!get_post_meta(get_the_ID(), 'dp_noindex', true) && 
-		!get_post_meta(get_the_ID(), 'dp_nofollow', true) && 
+	elseif (!get_post_meta(get_the_ID(), 'dp_noindex', true) &&
+		!get_post_meta(get_the_ID(), 'dp_nofollow', true) &&
 		get_post_meta(get_the_ID(), 'dp_noarchive', true)) :
 ?>
 <meta name="robots" content="noarchive" />
 <?php
-	elseif (!get_post_meta(get_the_ID(), 'dp_noindex', true) && 
-		get_post_meta(get_the_ID(), 'dp_nofollow', true) && 
+	elseif (!get_post_meta(get_the_ID(), 'dp_noindex', true) &&
+		get_post_meta(get_the_ID(), 'dp_nofollow', true) &&
 		!get_post_meta(get_the_ID(), 'dp_noarchive', true)) :
 ?>
 <meta name="robots" content="nofollow" />
 <?php
-	elseif (get_post_meta(get_the_ID(), 'dp_noindex', true) && 
-		!get_post_meta(get_the_ID(), 'dp_nofollow', true) && 
+	elseif (get_post_meta(get_the_ID(), 'dp_noindex', true) &&
+		!get_post_meta(get_the_ID(), 'dp_nofollow', true) &&
 		get_post_meta(get_the_ID(), 'dp_noarchive', true)) :
 ?>
 <meta name="robots" content="noindex,noarchive" />
@@ -68,7 +68,8 @@ dp_meta_kw_desc();
 dp_show_ogp();
 ?>
 <link rel="stylesheet" href="<?php echo DP_THEME_URI.'/'.DP_MOBILE_THEME_DIR.'/css/style.css?' . date('His'); ?>" media="screen, print" />
-<?php 
+<link rel="stylesheet" href="http://santorasuto.sakura.ne.jp/wp-content/themes/dp-graphie/mobile/css/common.css" media="all" />
+<?php
 // Custom CSS
 if ( file_exists( DP_UPLOAD_DIR . '/css/visual-custom.css') ) : ?>
 <link rel="stylesheet" href="<?php echo DP_UPLOAD_URI . '/css/visual-custom.css?' . date('His'); ?>" media="screen, print" />
@@ -147,8 +148,8 @@ _EOD_;
 // ***********************
 if ($options['gcs_id'] !== '') :  ?>
 <script>(function(){var cx='<?php echo $options['gcs_id']; ?>';var gcse=document.createElement('script'); gcse.type = 'text/javascript';gcse.async=true;gcse.src=(document.location.protocol=='https:'?'https:':'http:')+'//www.google.com/cse/cse.js?cx='+cx;var s =document.getElementsByTagName('script')[0];s.parentNode.insertBefore(gcse,s);})();</script>
-<?php 
-endif; 
+<?php
+endif;
 
 // ***********************
 // Custom header

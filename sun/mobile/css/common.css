@@ -22,8 +22,7 @@
 
 /* カラム */
 .col-wrap{position:relative;}
-.col-type01{width:630px;margin:0;padding:0;}
-.col-type02{width:400px;margin:0;padding:0;}
+.col-type03{margin:10px 0; padding:10px;border:1px solid #ccc;background:#EBFEFE;}
 
 /* 送信ボタン */
 input#submi{background:#ffaf51;}
@@ -38,7 +37,8 @@ input#submi{background:#ffaf51;}
 #container{padding:15px 20px;}
 .single_post_meta,
 .comment-respond,
-.trackback_url_area{display:none;}
+.trackback_url_area,
+#commentform{display:none;}
 #loop-section.magazine
 .loop-article,
 .single-article,
@@ -53,3 +53,6 @@ input#submi{background:#ffaf51;}
 .ft-widget-box,
 #searchform{margin:0;border:none;}
 nav.navigation{margin:0 auto;}
+
+/* メニュー位置 */
+.sl-menu-btn.left{right:10px !important;}
