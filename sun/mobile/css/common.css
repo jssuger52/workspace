@@ -26,7 +26,8 @@
 .col-type03{margin:10px 0; padding:10px;border:1px solid #ccc;background:#EBFEFE;}
 
 /* 画像 */
-.img-type01{float:right;width:300px;border:1px solid #ccc;}
+.img-type01{width:300px;margin:0 auto;border:1px solid #ccc;text-align:center;}
+.entry img{margin:0;}
 
 /* 送信ボタン */
 .entry input[type="submit"],
