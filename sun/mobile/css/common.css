@@ -14,18 +14,23 @@
 .rcm-item-ttl{}
 
 /* テーブル */
-.tbl-type01{width:100%;border-collapse:collapse;font-size:14px;line-height:1.4;}
+.tbl-type01{width:100%;border-collapse:collapse;font-size:12px;line-height:1.4;}
 .tbl-type01 th{width:25%;padding:6px;background-color:#eee;border:1px solid #b9b9b9;font-weight:normal;text-align:left;}
 .tbl-type01 td{padding:6px;border:1px solid #b9b9b9;background-color:#fff;}
 .font-size-l{font-size:20px;color:#f00;}
+.font-size-s{font-size:12px;color:#f00;}
 .font-color-red{color:#f00;}
 
 /* カラム */
 .col-wrap{position:relative;}
 .col-type03{margin:10px 0; padding:10px;border:1px solid #ccc;background:#EBFEFE;}
 
+/* 画像 */
+.img-type01{float:right;width:300px;border:1px solid #ccc;}
+
 /* 送信ボタン */
-input#submi{background:#ffaf51;}
+.entry input[type="submit"],
+input#submit{background:#ffaf51 !important;}
 
 /* レイアウト調整 */
 .entry,
@@ -53,6 +58,3 @@ input#submi{background:#ffaf51;}
 .ft-widget-box,
 #searchform{margin:0;border:none;}
 nav.navigation{margin:0 auto;}
-
-/* メニュー位置 */
-.sl-menu-btn.left{right:10px !important;}

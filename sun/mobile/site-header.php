@@ -10,11 +10,9 @@ if ($options_visual['h1title_as_what'] !== 'image') {
 ?>
 </header>
 <?php
-// Menu button 
+// Menu button
 if ($options['mb_slide_menu_position'] == 'right') {
 	$sl_menu_align = 'right';
-} else {
-	$sl_menu_align = 'left';
 }
 ?>
 <a href="#global_menu_nav" class="sl-menu-btn <?php echo $sl_menu_align; ?> icon-spaced-menu"><span>Menu</span></a>

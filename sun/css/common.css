@@ -38,8 +38,8 @@ input#submit{background:#ffaf51 !important;}
 
 /* レイアウト調整 */
 .entry,
-.entry img,
-.entry ul{margin:0;padding:0;}
+.entry img{margin:0;padding:0;}
+.entry ul{margin:0 0 0 20px;padding:0;}
 .entry .rcm-list01{margin:0 0 10px 20px;padding:0;}
 .content table{margin:0;padding:0;}
 .content dl{margin:0 0 15px;padding:0;}
