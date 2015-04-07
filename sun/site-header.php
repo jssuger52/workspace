@@ -66,14 +66,12 @@ if (is_front_page() && !is_paged() && have_posts() && !isset( $_REQUEST['q']) ) 
 		$header_fixed_class = '';
 	}
 	// Header banner outer tag
-	$banner_sec_tag = '<section class="header-banner-outer sl_loading'.$header_fixed_class.$header_half_class.'">
-	<h1 class="header-banner-ttl">メーカー認定!クリナップ製品のお取り付け<br />キッチンリフォームのサントラストへストへ</h1>';
+	$banner_sec_tag = '<section class="header-banner-outer sl_loading'.$header_fixed_class.$header_half_class.'">';
 	// Get header banner image
 	$banner_contents_code = dp_banner_contents();
 
 	// Check the title position
 	$title_position = $options['header_banner_title_position'];
-
 	// Site header contents
 	if ( ($options_visual['dp_header_content_type'] == 2 && $options_visual['dp_slideshow_type'] == 'img_with_url') ) {
 		// Disable header title and widget
