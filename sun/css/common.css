@@ -15,20 +15,28 @@
 .rcm-item-ttl{}
 
 /* テーブル */
-.tbl-type01{width:100%;margin:15px 0;border-collapse:collapse;font-size:14px;line-height:1.4;}
-.tbl-type01 th{padding:6px;background-color:#eee;border:1px solid #b9b9b9;font-weight:normal;text-align:left;}
-.tbl-type01 td{padding:6px;border:1px solid #b9b9b9;background-color:#fff;}
-.font-size-l{font-size:20px;color:#f00;}
-.font-size-s{font-size:12px;color:#f00;}
-.font-color-red{color:#f00;}
+.content .tbl-type01{width:100%;margin:15px 0;border-collapse:collapse;font-size:14px;line-height:1.4;}
+.content .tbl-type01 th{padding:8px;background-color:#eee;border:1px solid #b9b9b9;font-weight:normal;text-align:left;}
+.content .tbl-type01 td{padding:8px;border:1px solid #b9b9b9;background-color:#fff;}
 
 /* カラム */
 .col-wrap{position:relative;}
 .col-type01{width:630px;margin:0;padding:0;}
 .col-type02{width:470px;margin:0;padding:0;}
 .col-type03{margin:10px 0; padding:10px;border:1px solid #ccc;background:#eaf8f5;}
+.col-border-type01{height:300px;margin:0;padding:10px;border:1px solid #ddd;overflow:auto;}
 .col-left{float:left;}
 .col-right{float:right;}
+
+/* フォント */
+.font-size-l{font-size:20px;color:#f00;}
+.font-size-s{font-size:12px;color:#f00;}
+.font-color-red{color:#f00;}
+.font-color-gray{font-size:12px;color:#888;}
+
+/* リンク */
+.entry a{color:#438bc5;text-decoration:underline;}
+.entry a:hover{color:#438bc5;text-decoration:none;}
 
 /* 画像 */
 .img-type01{float:right;width:300px;border:1px solid #ccc;}
@@ -57,7 +65,6 @@ input#submit{background:#ffaf51 !important;}
 .entry img{margin:0;padding:0;}
 .entry ul{margin:0 0 0 20px;padding:0;}
 .entry .rcm-list01{margin:0 0 10px 20px;padding:0;}
-.content table{margin:0;padding:0;}
 .content dl{margin:0 0 15px;padding:0;}
 .entry p{padding:0 0 15px;}
 #container{padding:15px 20px;}
