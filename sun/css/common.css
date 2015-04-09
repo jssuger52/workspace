@@ -16,8 +16,8 @@
 
 /* テーブル */
 .content .tbl-type01{width:100%;margin:15px 0;border-collapse:collapse;font-size:14px;line-height:1.4;}
-.content .tbl-type01 th{padding:8px;background-color:#eee;border:1px solid #b9b9b9;font-weight:normal;text-align:left;}
-.content .tbl-type01 td{padding:8px;border:1px solid #b9b9b9;background-color:#fff;}
+.content .tbl-type01 th{padding:10px;background-color:#eee;border:1px solid #b9b9b9;font-weight:normal;text-align:left;}
+.content .tbl-type01 td{padding:10px;border:1px solid #b9b9b9;background-color:#fff;}
 
 /* カラム */
 .col-wrap{position:relative;}
